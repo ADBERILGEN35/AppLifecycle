@@ -20,23 +20,26 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        //Initialize binding.
         binding = FragmentHomeBinding.inflate(layoutInflater)
-
-        //Initialize.
         this.initialize()
-
         return binding.root
     }
 
+    /**
+     * Button click listener
+     *
+     */
     private fun initialize() {
-        //Button click listener.
         binding.buttonKaydet.setOnClickListener { this.buttonClick() }
     }
 
+
+    /**
+     * Get and Set text message.
+     *
+     */
     private fun buttonClick() {
         val editText = binding.editTextUsername.text.toString()
-
         binding.textViewName.text = editText
     }
 
@@ -51,9 +54,8 @@ class HomeFragment : Fragment() {
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-
-        //Get textView message.
         val textViewMessage = binding.textViewName.text.toString()
+        binding.textViewName.text = textViewMessage
 
 
     }
