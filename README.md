@@ -3,6 +3,8 @@
 
 onViewStateRestored ve  onSaveInstanceState kullanımı gerçekleştirilerek bir örnek yapılmıştır.
 
+[AppNavigation](https://github.com/FMSSBilisimAndroid/oguzhan_tasyaran_odev3)
+
 ## Ekran Görüntüleri
 
 Join Page             |  Login Page             
